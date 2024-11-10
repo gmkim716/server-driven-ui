@@ -1,0 +1,281 @@
+{
+  "missions": [
+    {
+      "id": "01",
+      "title": "출력",
+      "description": "변수를 선언하고 값을 변경하며 원하는 형태에 맞춰 값을 출력하는 방법에 대해 배우게 됩니다.",
+      "accordion": {
+        "isExpanded": false,
+        "canExpand": true
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "기본 출력",
+          "organize": "기본 개념 6개, 연습 문제 2개, 테스트 1개",
+          "description": "화면에 특정 값을 출력하는 방법에 대해 배우게 됩니다.",
+          "accordion": {
+            "isExpanded": false,
+            "canExpand": true
+          },
+          "contents": [
+            {
+              "id": "1",
+              "level": 1,
+              "title": "단어 출력",
+              "link": "/missions/1/problems/print-word",
+              "actionType": "navigate",
+              "exp": 10,
+              "time": 180,
+              "status": "미시작",
+              "ui": {
+                "progressCircle": {
+                  "type": "circle",
+                  "percentage": 0,
+                  "color": "#CCCCCC"
+                },
+                "statusBadge": {
+                  "label": "미시작"
+                },
+                "time": {
+                  "label": "3분",
+                  "icon": "clock",
+                  "style": {
+                    "color": "#000000"
+                  }
+                },
+                "xp": {
+                  "label": "10XP"
+                }
+              }
+            },
+            {
+              "id": 2,
+              "level": 1,
+              "title": "문장 출력",
+              "link": "/missions/2/problems/print-word",
+              "actionType": "navigate",
+              "exp": 10,
+              "time": 60,
+              "status": "미시작",
+              "ui": {
+                "progressCircle": {
+                  "type": "circle",
+                  "percentage": 0,
+                  "color": "#CCCCCC"
+                },
+                "statusBadge": {
+                  "label": "미시작"
+                },
+                "time": {
+                  "label": "1분",
+                  "icon": "clock",
+                  "style": {
+                    "color": "#000000"
+                  }
+                },
+                "xp": {
+                  "label": "10XP"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "level": 1,
+              "title": "따옴표 출력",
+              "link": "/missions/3/problems/print-quote",
+              "actionType": "navigate",
+              "exp": 10,
+              "time": 180,
+              "status": "미시작",
+              "ui": {
+                "progressCircle": {
+                  "type": "circle",
+                  "percentage": 0,
+                  "color": "#CCCCCC"
+                },
+                "statusBadge": {
+                  "label": "미시작"
+                },
+                "time": {
+                  "label": "3분",
+                  "icon": "clock",
+                  "style": {
+                    "color": "#000000"
+                  }
+                },
+                "xp": {
+                  "label": "10XP"
+                }
+              }
+            },
+            {
+              "id": 4,
+              "level": 1,
+              "title": "2줄 출력",
+              "link": "/missions/4/problems/print-two-lines",
+              "actionType": "navigate",
+              "exp": 10,
+              "time": 120,
+              "status": "미시작",
+              "ui": {
+                "progressCircle": {
+                  "type": "circle",
+                  "percentage": 0,
+                  "color": "#CCCCCC"
+                },
+                "statusBadge": {
+                  "label": "미시작"
+                },
+                "time": {
+                  "label": "2분",
+                  "icon": "clock",
+                  "style": {
+                    "color": "#000000"
+                  }
+                },
+                "xp": {
+                  "label": "10XP"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "변수와 자료형",
+          "organize": "기본 개념 4개, 연습 문제 3개, 테스트 2개",
+          "description": "변수와 자료형에 대해 배우며, 다양한 자료형을 활용하는 방법을 익힙니다.",
+          "accordion": {
+            "isExpanded": false,
+            "canExpand": true
+          },
+          "contents": [
+            {
+              "id": "1",
+              "level": 1,
+              "title": "단어 출력",
+              "link": "/missions/1/problems/print-word",
+              "actionType": "navigate",
+              "exp": 10,
+              "time": 180,
+              "status": "미시작",
+              "ui": {
+                "progressCircle": {
+                  "type": "circle",
+                  "percentage": 0,
+                  "color": "#CCCCCC"
+                },
+                "statusBadge": {
+                  "label": "미시작"
+                },
+                "time": {
+                  "label": "3분",
+                  "icon": "clock",
+                  "style": {
+                    "color": "#000000"
+                  }
+                },
+                "xp": {
+                  "label": "10XP"
+                }
+              }
+            },
+            {
+              "id": 2,
+              "level": 1,
+              "title": "문장 출력",
+              "link": "/missions/2/problems/print-word",
+              "actionType": "navigate",
+              "exp": 10,
+              "time": 60,
+              "status": "미시작",
+              "ui": {
+                "progressCircle": {
+                  "type": "circle",
+                  "percentage": 0,
+                  "color": "#CCCCCC"
+                },
+                "statusBadge": {
+                  "label": "미시작"
+                },
+                "time": {
+                  "label": "1분",
+                  "icon": "clock",
+                  "style": {
+                    "color": "#000000"
+                  }
+                },
+                "xp": {
+                  "label": "10XP"
+                }
+              }
+            },
+            {
+              "id": 3,
+              "level": 1,
+              "title": "따옴표 출력",
+              "link": "/missions/3/problems/print-quote",
+              "actionType": "navigate",
+              "exp": 10,
+              "time": 180,
+              "status": "미시작",
+              "ui": {
+                "progressCircle": {
+                  "type": "circle",
+                  "percentage": 0,
+                  "color": "#CCCCCC"
+                },
+                "statusBadge": {
+                  "label": "미시작"
+                },
+                "time": {
+                  "label": "3분",
+                  "icon": "clock",
+                  "style": {
+                    "color": "#000000"
+                  }
+                },
+                "xp": {
+                  "label": "10XP"
+                }
+              }
+            },
+            {
+              "id": 4,
+              "level": 1,
+              "title": "2줄 출력",
+              "link": "/missions/4/problems/print-two-lines",
+              "actionType": "navigate",
+              "exp": 10,
+              "time": 120,
+              "status": "미시작",
+              "ui": {
+                "progressCircle": {
+                  "type": "circle",
+                  "percentage": 0,
+                  "color": "#CCCCCC"
+                },
+                "statusBadge": {
+                  "label": "미시작"
+                },
+                "time": {
+                  "label": "2분",
+                  "icon": "clock",
+                  "style": {
+                    "color": "#000000"
+                  }
+                },
+                "xp": {
+                  "label": "10XP"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "status": "미시작",
+      "link": "/missions/1"
+    }
+  ]
+}
