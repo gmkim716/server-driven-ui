@@ -1,51 +1,52 @@
-"use client";
+import MissionListContainer from "../components/container-presenter/mission-list/container";
+import MissionMenuContainer from "../components/container-presenter/mission-menu/container";
 
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import CustomAccordion from "../components/compound/CustomAccordion";
-import { ContentType, MissionType } from "./types";
-import BadgeUI from "../components/ui/BadgeUI";
-import MissionUI from "../components/ui/MissionUI";
-import MissionMenuContainer from "../components/container/MissionMenuContainer";
+// import { useRouter } from "next/navigation";
+// import { useEffect, useState } from "react";
+// import CustomAccordion from "../components/compound/CustomAccordion";
+// import { ContentType, MissionType } from "./types";
+// import BadgeUI from "../components/ui/BadgeUI";
+// import MissionUI from "../components/ui/MissionUI";
+// import MissionMenuContainer from "../components/container-presenter/mission-menu/MissionMenuContainer.tsx";
 
 export default function MissionsPage() {
-  const router = useRouter();
+  // const router = useRouter();
 
-  const [missions, setMissions] = useState<MissionType[]>([]);
+  // const [missions, setMissions] = useState<MissionType[]>([]);
 
-  const handleAction = (content: ContentType) => {
-    if (content.actionType === "navigate" && content.link) {
-      // 링크로 이동하는 경우
-      router.push(content.link);
-    }
-  };
+  // const handleAction = (content: ContentType) => {
+  //   if (content.actionType === "navigate" && content.link) {
+  //     // 링크로 이동하는 경우
+  //     router.push(content.link);
+  //   }
+  // };
 
-  async function fetchMissions() {
-    try {
-      const response = await fetch("/json/tempMissions.json");
-      if (!response.ok) {
-        throw new Error("미션 데이터를 가져오는 데 실패했습니다.");
-      }
-      const data = await response.json();
-      setMissions(data.missions);
-    } catch (error) {
-      console.error("미션 데이터를 가져오는 중 오류가 발생했습니다:", error);
-    }
-  }
+  // async function fetchMissions() {
+  //   try {
+  //     const response = await fetch("/json/tempMissions.json");
+  //     if (!response.ok) {
+  //       throw new Error("미션 데이터를 가져오는 데 실패했습니다.");
+  //     }
+  //     const data = await response.json();
+  //     setMissions(data.missions);
+  //   } catch (error) {
+  //     console.error("미션 데이터를 가져오는 중 오류가 발생했습니다:", error);
+  //   }
+  // }
 
   // initialize
-  useEffect(() => {
-    fetchMissions();
-  }, []);
+  // useEffect(() => {
+  //   fetchMissions();
+  // }, []);
 
-  if (missions.length === 0) return <p>Loading...</p>;
+  // if (missions.length === 0) return <p>Loading...</p>;
 
   return (
     <div>
       <MissionMenuContainer />
+      <MissionListContainer />
 
-      {/* Mission List */}
-      <ul>
+      {/* <ul>
         {missions.map((mission) => (
           <li
             key={mission.id}
@@ -122,7 +123,7 @@ export default function MissionsPage() {
             </CustomAccordion>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

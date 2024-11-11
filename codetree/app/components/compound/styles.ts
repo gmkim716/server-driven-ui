@@ -7,6 +7,8 @@ import {
 
 //== Accordion ==//
 export const StyledAccordion = styled(Accordion)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
   boxShadow: theme.shadows[3],
   borderRadius: theme.shape.borderRadius,
   "&:before": {

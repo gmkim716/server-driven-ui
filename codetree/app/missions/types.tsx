@@ -1,8 +1,8 @@
 export interface MissionListType {
   id: number;
   level: number;
-  engTitle: string;
-  korTitle: string;
+  eng_title: string;
+  kor_title: string;
   problems: number;
   state: string;
   tag: string;

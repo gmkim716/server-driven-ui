@@ -1,0 +1,33 @@
+{
+  "problems": [
+    {
+      "idx": 4,
+      "problem": {
+        "eng_title": "print-word",
+        "kor_title": "출력",
+        "contents": [
+          {
+            "type": "p",
+            "content": "java에서 출력의 경우 System.out.print 라는 함수를 사용할 수 있습니다."
+          },
+          {
+            "type": "p",
+            "content": "다음과 같이 System.out.print 함수 안에 문자열을 넣게 되면, 해당 문자열이 화면에 출력됩니다."
+          },
+          {
+            "type": "code",
+            "content": "System.out.print(\"Hello\");",
+            "language": "java"
+          },
+          {
+            "type": "hr"
+          },
+          {
+            "type": "h2",
+            "content": "java 코드"
+          }
+        ]
+      }
+    }
+  ]
+}
