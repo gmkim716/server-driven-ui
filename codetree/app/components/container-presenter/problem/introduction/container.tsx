@@ -11,9 +11,5 @@ export default async function ProblemIntroductionContainer({
     (p: ProblemType) => p.idx === Number(problemId)
   );
 
-  return (
-    <>
-      <ProblemIntroductionPresenter problem={problem} />;
-    </>
-  );
+  return <>{/* <ProblemIntroductionPresenter problem={problem} />; */}</>;
 }

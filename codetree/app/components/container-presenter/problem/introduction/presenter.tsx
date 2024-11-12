@@ -1,6 +1,5 @@
 "use client";
 
-import TabUI from "@/app/components/ui/TabUI";
 import { ProblemIntroductionPresenterProps } from "./types";
 
 export default function ProblemIntroductionPresenter({
