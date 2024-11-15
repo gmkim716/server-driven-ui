@@ -1,0 +1,22 @@
+{
+  "id": 1980,
+  "study_unit_id": 167,
+  "name": "입력받는 수 부터 100까지 출력",
+  "progress_status": "Ready",
+  "level": "Easy",
+  "is_clicked_date": "2024-11-14T12:42:51.126818Z",
+  "is_intro": false,
+  "is_test": false,
+  "curated_problem_id": 1013,
+  "alias": "print-number-from-given-num-to-100",
+  "experience_point": 10,
+  "solved_minute": 2,
+  "mission_name": "Novice Low",
+  "mission_copy": "프로그래밍 기초",
+  "mission_id": 4,
+  "prev_alias": "print-in-order",
+  "next_alias": "reading-k201517",
+  "concept_id": 16,
+  "concept_name": "단순 반복문",
+  "study_unit_name": "for문 a → b 1씩 증가"
+}

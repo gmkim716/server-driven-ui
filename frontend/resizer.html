@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resizable Container Example</title>
+    <style>
+      /* 기본 스타일 */
+      #container {
+        display: flex;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #ddd;
+      }
+
+      /* 컨텐츠 영역 스타일 */
+      #content {
+        flex: 1;
+        padding: 20px;
+        background-color: #f0f0f0;
+        overflow: auto;
+      }
+
+      /* 리사이저 핸들 스타일 */
+      #resizer {
+        width: 5px;
+        cursor: ew-resize;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="content">
+        <p>This is resizable content. Drag the right border to resize.</p>
+      </div>
+      <div id="resizer"></div>
+    </div>
+
+    <script>
+      const resizer = document.getElementById("resizer");
+      const container = document.getElementById("container");
+
+      // 마우스가 눌려졌을 때 이벤트 시작
+      resizer.addEventListener("mousedown", (e) => {
+        document.addEventListener("mousemove", resize);
+        document.addEventListener("mouseup", stopResize);
+      });
+
+      // 리사이즈 함수: 마우스 위치에 따라 container의 너비를 조절
+      function resize(e) {
+        container.style.width = `${e.pageX - container.offsetLeft}px`;
+      }
+
+      // 마우스를 떼었을 때 이벤트 종료
+      function stopResize() {
+        document.removeEventListener("mousemove", resize);
+        document.removeEventListener("mouseup", stopResize);
+      }
+    </script>
+  </body>
+</html>

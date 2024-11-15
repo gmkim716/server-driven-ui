@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 0.375rem; /* Tailwind의 rounded-md */
+  overflow-x: auto;
+  position: relative; /* 복사 버튼 위치 조정 위해 */
+  color: #333;
+}
+
+pre code {
+  color: inherit; /* 코드 블록의 텍스트 색상 상속 */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.875rem; /* Tailwind의 text-sm */
+}
+
+.copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #e2e8f0; /* Tailwind의 bg-gray-200 */
+  color: #4a5568; /* Tailwind의 text-gray-700 */
+  font-size: 0.75rem; /* Tailwind의 text-xs */
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem; /* Tailwind의 rounded */
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #cbd5e0; /* Tailwind의 bg-gray-300 */
+  color: #2d3748; /* Tailwind의 text-gray-800 */
+}

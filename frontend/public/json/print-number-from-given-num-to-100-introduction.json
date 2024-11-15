@@ -1,0 +1,28 @@
+{
+  "alias": "print-number-from-given-num-to-100",
+  "id": 1980,
+  "type": "Code block",
+  "discussions_count": 0,
+  "mc_answers_count": 0,
+  "mc_questions": [],
+  "mc_questions_en": [],
+  "name": "입력받는 수 부터 100까지 출력",
+  "description": "# 입력받는 수 부터 100까지 출력\n\n100 이하의 정수 n을 입력받은 후, n부터 100까지의 숫자를 순서대로 출력하는 프로그램을 작성해보세요.\n\n## 입력 형식\n\n첫 번째 줄에 n이 주어집니다.\n + 1 ≤ n ≤ 100\n\n## 출력 형식\n\n첫 번째 줄에 n부터 100까지의 숫자를 공백을 사이에 두고 출력합니다.\n\n## 입출력 예제\n\n### 예제1\n```\n입력:\n98\n\n출력: \n98 99 100\n```\n\n## 제한\n    시간 제한: 1000ms\n    메모리 제한: 80MB",
+  "description_en": "# Print Numbers from Input to 100\n\nWrite a program that, after receiving an integer $n$ less than or equal to $100$, prints the numbers from $n$ to $100$ in order.\n\n## Input\n\nThe first line contains $n$.\n\n## Constraints\n\n- $1 \\leq n \\leq 100$\n\n## Output\n\nPrint the numbers from $n$ to $100$, separated by spaces, on the first line.\n\n## Examples\n\n### Example 1\n```\nInput:\n98\n\nOutput: \n98 99 100\n```\n\n## Limits\n\n```\nTime: 1000 ms\nMemory: 80 MiB\n```",
+  "test_cases": [
+    {
+      "order": 1,
+      "stdin": "98",
+      "stdout": "98 99 100"
+    }
+  ],
+  "time_limit": 1000.0,
+  "memory_limit": 80,
+  "submission_count": 3646,
+  "correct_count": 3133,
+  "solved_minute": 2,
+  "experience_point": 10,
+  "tier": 1,
+  "tags": ["Iteration"],
+  "is_training_field": false
+}
