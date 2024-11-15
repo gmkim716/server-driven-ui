@@ -1,0 +1,65 @@
+version: "3.8"
+services:
+  # User Service
+  user-service:
+    build:
+      context: ./user-service
+    ports:
+      - "3001:3001"
+    depends_on:
+      user-db:
+        condition: service_healthy # healthcheck 의존성 추가
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=${USER_DB_HOST}
+      - DB_PORT=${USER_DB_PORT}
+      - DB_USER=${USER_DB_USER}
+      - DB_PASSWORD=${USER_DB_PASSWORD}
+      - DB_NAME=${USER_DB_NAME}
+
+  # Problem Service
+  problem-service:
+    build:
+      context: ./problem-service
+    ports:
+      - "3002:3002"
+    depends_on:
+      problem-db:
+        condition: service_healthy
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=${PROBLEM_DB_HOST}
+      - DB_PORT=${PROBLEM_DB_PORT}
+      - DB_USER=${PROBLEM_DB_USER}
+      - DB_PASSWORD=${PROBLEM_DB_PASSWORD}
+      - DB_NAME=${PROBLEM_DB_NAME}
+
+  # User Service Database
+  user-db:
+    image: postgres:15
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${USER_DB_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      - POSTGRES_USER=${USER_DB_USER}
+      - POSTGRES_PASSWORD=${USER_DB_PASSWORD}
+      - POSTGRES_DB=${USER_DB_NAME}
+    ports:
+      - "5432:5432"
+
+  # Problem Service Database
+  problem-db:
+    image: postgres:15
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${PROBLEM_DB_USER}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      - POSTGRES_USER=${PROBLEM_DB_USER}
+      - POSTGRES_PASSWORD=${PROBLEM_DB_PASSWORD}
+      - POSTGRES_DB=${PROBLEM_DB_NAME}
+    ports:
+      - "5433:5432"
